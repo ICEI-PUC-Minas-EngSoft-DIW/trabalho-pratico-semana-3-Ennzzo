@@ -1,3 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+html,
 body {
-    background-color: aquamarine;
+  height: 100%;
+  font: 16px/1.5 system-ui, sans-serif;
+  color: #222;
+  background: #fff;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.cont {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 0.9rem;
+  border-radius: 10px;
+  background: #2563eb;
+  color: #fff;
+}
+
+.cabecalho-site {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+.barra-topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+.marca {
+  max-width: 120px;
+}
+.navegacao .menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navegacao .menu a {
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+}
+.navegacao .menu a:hover,
+.navegacao .menu a.ativo {
+  background: #f5f5f5;
+}
+.acoes-topo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.link-acao {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.45rem 0.7rem;
+  border-radius: 8px;
+}
+.link-acao:hover {
+  background: #f5f5f5;
+  color: #2563eb;
+}
+.caixa-perfil {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 999px;
+  padding: 0.25rem 0.35rem;
+}
+.botao-icone {
+  background: none;
+  border: none;
+  padding: 0.3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.botao-icone:hover {
+  background: #f3f4f6;
 }
