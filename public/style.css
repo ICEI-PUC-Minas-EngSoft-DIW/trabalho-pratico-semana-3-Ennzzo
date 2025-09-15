@@ -193,3 +193,26 @@ a {
   color: #6b7280;
   font-size: 0.92rem;
 }
+
+.rodape-site {
+  margin-top: 40px;
+  border-top: 1px solid #e5e7eb;
+  background: #fafafa;
+}
+.grade-rodape {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  gap: 20px;
+  padding: 22px 0;
+}
+.grade-rodape h3 {
+  margin: 0 0 8px;
+}
+.sobre p {
+  margin: 0;
+}
+.direitos {
+  border-top: 1px solid #e5e7eb;
+  padding: 10px 0 18px;
+  color: #6b7280;
+}
