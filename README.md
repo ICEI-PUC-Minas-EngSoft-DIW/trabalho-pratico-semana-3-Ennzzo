@@ -8,17 +8,15 @@ Nessa atividade, você deverá montar a página inicial do projeto escolhido, a 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
-
+- Nome: Enzo Bambirra Pinto
+- Matricula: 905650
+- Proposta de projeto escolhida: O PlayRun foi um projeto escolhido para as pessoas escolherem eventos de atividade física em diferentes lugares.
+- Breve descrição sobre seu projeto: Focado em eventos esportivos queremos explorar corridas de rua, triathlon, futebol e outros esportes, com boa informação e a possibilidade de criar eventos, acompanhar esportes e participar
 
 ## Print do(s) wireframe(s) criado
 
-<<  COLOQUE A IMAGEM AQUI >>
-
+![Wireframe](/wireframe.png)
 
 ## Print da home-page criada
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Home Page](/paginaweb.png)
