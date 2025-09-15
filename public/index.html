@@ -1,89 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PlayRun</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PlayRun</title>
+    <link rel="stylesheet" href="/public/style.css" />
+    <link rel="preconnect" href="https://source.unsplash.com">
 </head>
-<header class="cabecalho-site">
-  <div class="cont barra-topo">
-    <a href="#" class="marca">
-      <img src="logo.png" alt="PlayRun">
-    </a>
-    <nav class="navegacao">
-      <ul class="menu">
-        <li><a href="#" class="ativo">Início</a></li>
-        <li><a href="#">Eventos</a></li>
-        <li><a href="#">Categorias</a></li>
-      </ul>
-    </nav>
-    <div class="acoes-topo">
-      <a href="#" class="link-acao">Criar evento</a>
-      <a href="#" class="link-acao">Meus eventos</a>
-      <a href="#" class="link-acao">Meus ingressos</a>
-      <div class="caixa-perfil">
-        <button class="botao-icone">☰</button>
-        <button class="botao-icone">👤</button>
-      </div>
-    </div>
-  </div>
-</header>
-<main class="conteudo-site">
-  <form class="formulario-busca cont">
-    <input type="text" placeholder="Busque eventos">
-    <input type="text" placeholder="Cidade">
-    <button class="btn">Buscar</button>
-  </form>
-
-  <div class="filtros cont">
-    <span class="selo ativo">Corrida</span>
-    <span class="selo">Triathlon</span>
-    <span class="selo">Ciclismo</span>
-  </div>
-
-  <div class="faixa cont">
-    <img src="banner.jpg" alt="Eventos em destaque" class="imagem-faixa">
-  </div>
-  <section class="bloco-secao cont" id="destaques">
-    <div class="cabeca-secao">
-      <h2>Destaques</h2>
-      <a href="#" class="link-secao">Ver todos</a>
-    </div>
-    <div class="grade-cards">
-      <article class="card-evento">
-        <div class="capa"><img src="evento1.jpg" alt="Corrida X"></div>
-        <div class="corpo">
-          <h3 class="titulo"><a href="#">Corrida X</a></h3>
-          <div class="detalhes"><time>20/09</time> • Belo Horizonte</div>
-        </div>
-      </article>
-      <!-- mais cards -->
-    </div>
-  </section>
-</main>
-<footer class="rodape-site">
-  <div class="cont grade-rodape">
-    <div class="sobre">
-      <h3>Sobre</h3>
-      <p>Plataforma de eventos esportivos.</p>
-    </div>
-    <div class="links">
-      <h3>Links úteis</h3>
-      <ul>
-        <li><a href="#">Ajuda</a></li>
-        <li><a href="#">Política de privacidade</a></li>
-      </ul>
-    </div>
-    <div class="contato">
-      <h3>Contato</h3>
-      <p>contato@playrun.com</p>
-    </div>
-  </div>
-  <div class="direitos cont">© 2025 PlayRun</div>
-</footer>
-</body>
-</html>
 
 <body>
+    <header class="cabecalho-site site-header">
+        <div class="cont barra-topo">
+            <a class="marca logo" href="#"><img src="/public/imgs/logo.png" alt="Logo PlayRun"></a>
+            <nav class="navegacao" aria-label="Navegação principal">
+                <ul class="menu">
+                    <li><a href="#" class="ativo">Início</a></li>
+                    <li><a href="#">Categorias</a></li>
+                    <li><a href="#">Coleções</a></li>
+                    <li><a href="#">Ajuda</a></li>
+                </ul>
+            </nav>
+            <div class="acoes-topo">
+                <a href="#" class="link-acao">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M12 5v14m-7-7h14" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                    Criar evento
+                </a>
+                <a href="#" class="link-acao">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path
+                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                    </svg>
+                    Meus eventos
+                </a>
+                <a href="#" class="link-acao">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                    Meus ingressos
+                </a>
 
+                <div class="caixa-perfil">
+                    <button class="botao-icone" aria-label="Menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                    </button>
+                    <button class="botao-icone" aria-label="Perfil">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <circle cx="12" cy="7" r="4" />
+                            <path d="M5.5 21a6.5 6.5 0 0113 0" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <form class="formulario-busca cont" role="search" aria-label="Buscar eventos">
+            <label class="apenas-leitor" for="q">Buscar experiências</label>
+            <input id="q" name="q" type="search" placeholder="Buscar experiências (ex: corrida, futebol…)" required />
+
+            <label class="apenas-leitor" for="city">Cidade</label>
+            <input id="city" name="city" type="text" placeholder="Qualquer lugar" />
+
+            <button type="submit" class="botao btn">Buscar</button>
+        </form>
+        <nav class="filtros cont" aria-label="Filtros">
+            <button type="button" class="chip">Qualquer lugar</button>
+            <button type="button" class="chip">Corridas de rua</button>
+            <button type="button" class="chip">Triathlon</button>
+            <button type="button" class="chip">Futebol</button>
+            <button type="button" class="chip">Treinos</button>
+        </nav>
+    </header>
+    <main class="conteudo-site">
+        <section class="faixa banner cont" aria-label="Destaques">
+            <img class="imagem-faixa banner-img" src="https://picsum.photos/1920/1080"
+                alt="Banner de evento em destaque — maratona" />
+        </section>
+        <section id="destaques" class="cont bloco-secao">
+            <header class="cabeca-secao">
+                <h2>Eventos em destaque</h2>
+                <a class="link-secao" href="#">Ver tudo</a>
+            </header>
+
+            <div class="grade-cards">
+                <article class="card-evento">
+                    <a class="capa" href="#"><img src="https://picsum.photos/200"
+                            alt="Imagem de corrida de rua" /></a>
+                    <div class="corpo">
+                        <h3 class="titulo"><a href="#">Corrida da Cidade 10K</a></h3>
+                        <p class="detalhes"><time datetime="2025-10-12">Dom, 12 de Out às 07:00</time> • <span
+                                class="local place">Praça da Liberdade, BH</span></p>
+                    </div>
+                </article>
+                <article class="card-evento">
+                    <a class="capa" href="#"><img src="https://picsum.photos/200"
+                            alt="Imagem de triathlon" /></a>
+                    <div class="corpo">
+                        <h3 class="titulo"><a href="#">Triathlon Lagoa 70.3</a></h3>
+                        <p class="detalhes"><time datetime="2025-11-08">Sáb, 08 de Nov às 06:00</time> • <span
+                                class="local place">Lagoa da Pampulha, BH</span></p>
+                    </div>
+                </article>
+                <article class="card-evento">
+                    <a class="capa" href="#"><img src="https://picsum.photos/200/300?grayscale"
+                            alt="Imagem de estádio de futebol" /></a>
+                    <div class="corpo">
+                        <h3 class="titulo"><a href="#">Clássico no Mineirão</a></h3>
+                        <p class="detalhes"><time datetime="2025-09-28">Dom, 28 de Set às 16:00</time> • <span
+                                class="local place">Estádio Mineirão, BH</span></p>
+                    </div>
+                </article>
+                <article class="card-evento">
+                    <a class="capa" href="#"><img src="https://picsum.photos/200/300"
+                            alt="Imagem de coleção de eventos" /></a>
+                    <div class="corpo">
+                        <h3 class="titulo"><a href="#">Explore nossas coleções</a></h3>
+                        <p class="detalhes">Curadorias de corridas, trilhas e futebol</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="cont bloco-secao">
+            <header class="cabeca-secao">
+                <h2>Coleções populares</h2>
+            </header>
+            <div class="colecoes grade-cards">
+                <article class="card-evento">
+                    <a class="capa" href="#"><img src="https://picsum.photos/200"
+                            alt="Trilhas e montanha" /></a>
+                    <div class="corpo">
+                        <h3 class="titulo"><a href="#">Trilhas e Montanha</a></h3>
+                        <p class="detalhes">14 eventos</p>
+                    </div>
+                </article>
+
+                <article class="card-evento">
+                    <a class="capa" href="#"><img src="https://picsum.photos/200/300" alt="Ciclismo" /></a>
+                    <div class="corpo">
+                        <h3 class="titulo"><a href="#">Ciclismo</a></h3>
+                        <p class="detalhes">9 eventos</p>
+                    </div>
+                </article>
+
+                <article class="card-evento">
+                    <a class="capa" href="#"><img src="https://picsum.photos/200/300" alt="Natação" /></a>
+                    <div class="corpo">
+                        <h3 class="titulo"><a href="#">Natação</a></h3>
+                        <p class="detalhes">6 eventos</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape-site">
+        <section class="cont grade-rodape">
+            <article class="sobre">
+                <h3>Quem somos</h3>
+                <p>Plataforma para descobrir e participar de eventos esportivos</p>
+            </article>
+
+            <article>
+                <h3>Receba novidades</h3>
+                <form>
+                    <label class="apenas-leitor" for="nome">Nome</label>
+                    <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+                    <label class="apenas-leitor" for="email">E-mail</label>
+                    <input id="email" name="email" type="email" placeholder="Seu e-mail" required />
+                    <button class="botao btn" type="submit">Inscrever</button>
+                </form>
+            </article>
+
+            <article class="links-uteis">
+                <h3>Links úteis</h3>
+                <nav aria-label="Links do rodapé">
+                    <ul>
+                        <li><a href="#">Trabalhe conosco</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                    </ul>
+                </nav>
+            </article>
+        </section>
+        <div class="cont direitos">
+            <small>© 2025 PlayRun</small>
+        </div>
+    </footer>
+</body>
+</html>
